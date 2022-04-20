@@ -22,8 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-register_activation_hook( __FILE__, __NAMESPACE__ . '\\add_user_media_caps' );
-register_deactivation_hook( __FILE__, __NAMESPACE__ . '\\remove_user_media_caps' );
+register_activation_hook( __FILE__, __NAMESPACE__ . '\add_user_media_caps' );
+register_deactivation_hook( __FILE__, __NAMESPACE__ . '\remove_user_media_caps' );
 
 /**
  * Add capability for subscribers to edit their own posts
